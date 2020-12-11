@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">   
   <script src="https://kit.fontawesome.com/57cb575b1d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
   <title>Youtube</title>
 </head>
 <body>
@@ -26,7 +27,8 @@
     <video controls src="video/KakaoTalk_20201127_171527744.mp4"></video>
   </section>
 
-  <!-- video Info -->
+  <div class="infoAndNext">
+    <!-- video Info -->
   <section class="info">
     <!-- metadata -->
     <div class="metadata">
@@ -36,7 +38,7 @@
         <li>#World</li>        
       </ul>
       <div class="titleAndButton">
-        <span class="title">
+        <span class="title clamp">
           환영합니다. Herryboro 월드입니다. 신입(초보) #개발자 가 저지르기 쉬운 실수들을 모아봤습니다.
           이 습관들만 개선해도 같이 일하고 싶은 개발자로 사랑 받을 수 있습니다😉!                
           좋은 개발자를 꿈꾸며 오늘도 '구독'과 '좋아요' 눌러주세요♥
@@ -78,11 +80,14 @@
     </div>
   </section>
 
+  <!-- Recommand channel -->
   <section class="UpNext">
     <span class="title">Up Next</span>
     <ul>
       <li class="item">
-        <img src="images/합성.PNG" alt="">
+        <div class="img">
+          <img src="images/합성.PNG" alt="">
+        </div>     
         <div class="info">
           <span class="title">
             조세진! 서울 사당 인근의 영수태권도에 다니는 한 어린아이를 주먹으로 폭행.
@@ -91,35 +96,39 @@
           <span class="name">HerryWorld by herryboro</span>
           <span class="views">82K views</span>
         </div>
-        <button class="moreBtn"></button>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
       </li>
       <li class="item">
-        <img src="images/옷2.PNG" alt="">
-          <div>
-            <span class="title">
-              인스타그램 풀스택 클론 코딩의 최종 완성본을 공개합니다!!
-              - 백엔드: 장고, 자바스크립트
-              - 프런트엔드: 리액트 JS
-              - 앱: 리액트 네이티브
-              - 마지막 AWS 까지
-              +++
-              https://nomadcoders.co/instaclone
-              .
-              .
-              Youtube 구독은 사랑입니다 ❤️
-              니콜라스와 코딩 공부하기 👉🏻https://nomadcoders.co 👈🏻
-              노마드 코더가 궁금하다면? 💃 https://linktr.ee/nomad_coders 💃
-            </span>
-            <span class="name">
-              노마드 코더 Nomad Coders
-            </span>
-            <span class="views">조회수 10,594회</span>
-          </div>
-          <button class="moreBtn"></button>
+        <div class="img">
+          <img id="cloth" src="images/옷2.PNG" alt="">
+        </div>
+        <div class="info">
+          <span class="title">
+            인스타그램 풀스택 클론 코딩의 최종 완성본을 공개합니다!!
+            - 백엔드: 장고, 자바스크립트
+            - 프런트엔드: 리액트 JS
+            - 앱: 리액트 네이티브
+            - 마지막 AWS 까지
+            +++
+            https://nomadcoders.co/instaclone
+            .
+            .
+            Youtube 구독은 사랑입니다 ❤️
+            니콜라스와 코딩 공부하기 👉🏻https://nomadcoders.co 👈🏻
+            노마드 코더가 궁금하다면? 💃 https://linktr.ee/nomad_coders 💃
+          </span>
+          <span class="name">
+            노마드 코더 Nomad Coders
+          </span>
+          <span class="views">조회수 10,594회</span>
+        </div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
       </li>
       <li class="item">
-        <img src="images/말티즈.PNG" alt="">  
-        <div>
+        <div class="img">
+          <img id="dog" src="images/말티즈.PNG" alt="">  
+        </div>
+        <div class="info">
           <span class="title">
             가족들과 충분한 상의를 한후 입양을 결정하였습니다.
             저희가 입양한 냥이는 번식장에서 태어나 아프다는 이유로 버림받고 구조된 아이에요 현재는 건강한 편이고요
@@ -130,9 +139,11 @@
           </span>
           <span class="views">조회수 92,409회</span>
         </div>
-        <button class="moreBtn"></button>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
       </li>
     </ul>
   </section>
+  </div>
+  
 </body>
 </html>

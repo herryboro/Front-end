@@ -73,7 +73,7 @@ header .icons .fa-search {
   max-width: 1000px;
 }
 
-.info {
+body > .info {
   padding: var(--padding);
 }
 
@@ -93,6 +93,10 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -101,6 +105,11 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
 }
 
 .info .views {
@@ -169,4 +178,63 @@ header .icons .fa-search {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
+}
+
+.UpNext {
+  padding: 0 var(--padding);
+}
+
+.UpNext > .title {
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.UpNext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.UpNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.UpNext .item .img img {
+  width: 100%;
+}
+
+.UpNext .item .info {
+  flex: 1 1 60%;
+}
+
+.UpNext .item .info .name {
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+}
+
+.UpNext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.UpNext .item img {
+  width: 261.45px;
+  height: 245.23px;
+}
+
+.UpNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoAndNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndNext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
 }
