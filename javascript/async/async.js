@@ -50,7 +50,7 @@ userStorage.loginUser(
   password,
   user => {
     userStorage.getRoles(
-      user,
+      user, 
       userWithRole => {
         alert(`Hello ${userWithRole.name}, you have a ${userWithRole.role} role.`);
       },
