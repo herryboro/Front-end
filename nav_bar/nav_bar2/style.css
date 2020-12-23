@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darksalmon;
+  padding: 10px 8px;
+}
+
+.nav .left i {
+  color: #7dacf1;
+  font-size: 24px;
+}
+
+.nav .left a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.nav .center {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.nav .center li {
+  padding: 20px;
+}
+
+.nav .center li:hover {
+  background-color: thistle;
+  border-radius: 10px;
+}
+
+.nav .right {
+  list-style: none;
+  display: flex;
+}
+
+.nav .right li {
+  padding: 0px 5px;
+}
