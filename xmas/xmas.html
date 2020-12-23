@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+  <meta property="og:title" content="굥춘이의 훈화말씀">
+  <meta property="og:description" content="2020을 추억하며">
   <title>xmas card</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
   <style>
+
     * {
       font-family: 'Poor Story', cursive;
     }    
@@ -22,7 +27,7 @@
       background-position: center;
       background-size: cover;
       margin: 200px auto 0px auto;
-      display: none;
+      cursor: pointer;
     }
 
     .text {
@@ -30,7 +35,11 @@
       color: white;
     }
 
-    .enTotal {
+    .letter-close {
+      display: block;
+    }
+
+    .letter-open {
       display: none;
     }
 
@@ -38,7 +47,7 @@
       background-color: white;
       width: 200px;
       height: 200px;
-      background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif');
+      background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker+(1).gif');
       background-size: cover;
       background-position: center;
       border-radius: 100px;
@@ -46,18 +55,80 @@
       margin: 100px auto 0px auto;
       box-shadow: 0px 0px 10px 0px white;
     }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin: 40px;
+    }
+
+    .message {
+      background-color: ivory;
+      color: brown;
+      width: 490px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0px 0px 10px 0px white;
+      line-height: 30px;
+      font-size: 20px;
+    }
+
+    .message-box {
+      text-align: right;
+      margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: 760px) {
+      .message {     
+        width: 280px;
+        font-size: 15px;
+      }
+
+      .rtan {   
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+       }
+
+      .envelope {
+        margin: 150px auto 0px auto;
+      }
+    }  
+
   </style>
+  <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+  <script>
+    function open_letter() {
+      document.getElementsByClassName("letter-close")[0].style.display = 'none'
+      document.getElementsByClassName("letter-open")[0].style.display = 'block'
+    }
+
+    function go_rtun() {
+      alert('앗! 어떻게 찾았지?');
+      window.location.href = 'https://online.spartacodingclub.kr/mypage';
+    }
+  </script>
 </head>
 <body>
-  <div class="enTotal">
-    <div class="envelope">
-    
-    </div>
+
+  <div class="letter-close" onclick="open_letter()">
+    <div class="envelope"></div>
     <h1 class="text">봉투를 열어봐!</h1>
   </div>
 
-  <div class="rtan">
-    
+  <div class="letter-open">
+    <div class="rtan" onclick="go_rtun()"></div>
+    <h1>2020년 수고 많았어!</h1>
+    <div class="message">
+      친구들에게. <br />
+      우진, 정한아, 빨리 취업해서 달달해지자. <br />
+      유찬아, 옆에서 여친이랑 통화하고 있는 내 모습을 보니 초라하구나. <br />
+      광훈아,여친 생긴거 다 알아 추카해~ <br />
+      숙대 여신 세진아, 뭔 말할 줄 알지? <br />
+      승현, 영근이는 핵잠수함이냐? <br />
+      <p class="message-box">2020년 herry가</p>  
+    </div>
   </div>
+
 </body>
 </html>
