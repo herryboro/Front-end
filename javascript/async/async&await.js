@@ -9,3 +9,5 @@ function fetchUser() {
 
 const user = fetchUser();
 user.then(console.log);
+
+// 2. await
