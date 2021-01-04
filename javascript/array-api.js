@@ -55,7 +55,7 @@ const students = [
 // result should be: [45, 80, 90, 66, 88]
 {
   const result = students.map((student) => student.score);
-  console.log(result);
+  console.log('map: ' + result);
 }
 
 // Q8. check if there is a student with the score lower than 50
@@ -88,7 +88,6 @@ const students = [
 }
 
 {
-  console.clear();
   let arr = [1, 2, 4, 10 ,6];
   
   for(let i in arr) {
