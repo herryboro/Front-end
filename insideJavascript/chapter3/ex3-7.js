@@ -1,26 +1,27 @@
-let foo = {
-  name: 'foo',
-  major: 'computer science'
+let obj = {
+  name: 'herryboro',
+  major: 'Backend Engineer'
 };
 
-console.log(foo.name);
-console.log(foo['name']);
-console.log(foo.nickname);
+// console.log(obj.name);
+// console.log(obj['name']);
+// console.log(obj.nickname);
 
 // 객체 프로퍼티 갱신
-foo.major = 'electronics enginnering';
-console.log(foo.major);
-console.log(foo['major']);
+// obj.major = 'electronics enginnering';
+// console.log(obj.major);
+// console.log(obj['major']);
 
 // 객체 프로퍼티 동적 생성
-foo.age = 30;
-console.log(foo.age);
+// obj.age = 33;
+// console.log(obj.age);
+// console.log(obj);
 
 // 대괄호 표기법만을 사용해야 할 경우
-foo['full-name'] = 'foo bar';
-console.log(foo['full-name']);
-console.log(foo.full-name);
-console.log(foo.full);
+obj['full-name'] = 'obj bar';
+console.log(obj['full-name']);
+console.log(obj.full-name);
+console.log(obj.full);
 console.log(name);
 
-console.log(foo);
+console.log(obj);

@@ -1,10 +1,10 @@
-// Object() 를 이용하여 foo빈 객체 생성
-let foo = new Object();
+// Object() 를 이용하여 객체 생성
+let obj = new Object();
 
 // foo 객체 프로퍼티 생성
-foo.name = 'foo';
-foo.age = 20;
-foo.gender = 'male';
+obj.name = 'herryboro';
+obj.age = 33;
+obj.gender = 'male';
 
-console.log(typeof foo);
-console.log(foo);
+console.log(typeof obj);
+console.log(obj);
