@@ -5,5 +5,5 @@ let factorialVar = function factorial(n) {
   return n * factorial(n - 1);
 };
 
-console.log(factorialVar(4));
+console.log(factorialVar(2));
 console.log(factorial(4));

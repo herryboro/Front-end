@@ -1,14 +1,14 @@
 // colorsArray 배열
-let colorsArray = ['orange', 'yellow', 'green'];
+let colorsArray = ['a', 'b', 'c'];
 console.log(colorsArray[0]);
 console.log(colorsArray[1]);
 console.log(colorsArray[2]);
 
 // colorObj 객체
 let colorObj = {
-  '0': 'orange',
-  '1': 'yello',
-  '2': 'green'
+  '0': 'a',
+  '1': 'b',
+  '2': 'c'
 };
 
 console.log(colorObj[0]);

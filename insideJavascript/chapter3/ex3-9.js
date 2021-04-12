@@ -1,5 +1,5 @@
 let objA = {
-  let: 40
+  let: 100
 };
 
 let objB = objA;
@@ -7,6 +7,6 @@ let objB = objA;
 console.log(objA.let);
 console.log(objB.let);
 
-objB.let = 50;
+objB.let = 200;
 console.log(objA.let);
 console.log(objB.let);
