@@ -5,7 +5,8 @@ function add(x, y) {
 
 // add() 함수 객체에 result, status 프로퍼티 추가
 add.result = add(3, 2);
-add.status = 'OK';
+add.status = "OK";
 
 console.log(add.result);
 console.log(add.status);
+console.dir(add);
