@@ -4,5 +4,4 @@ function myFunction() {
 }
 
 console.dir(myFunction.prototype);
-
 console.dir(myFunction.prototype.constructor);
