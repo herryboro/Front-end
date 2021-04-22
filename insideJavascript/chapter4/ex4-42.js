@@ -1,6 +1,7 @@
 function Person(name) {
   this.name = name;
 }
+
 console.dir(Person);
 
 Person.prototype.getName = function () {

@@ -1,0 +1,9 @@
+/* 사이즈 px, em, rem  */
+
+.page-content {
+  padding: 3rem;
+}
+
+.box {
+  border: 1px solid #efefef;
+}
