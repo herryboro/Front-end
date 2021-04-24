@@ -9,7 +9,7 @@ var bar = new Person('bar');
 
 console.log(foo.country);
 console.log(bar.country);
-foo.country = 'Japan';
 
+foo.country = 'Japan';
 console.log(foo.country);
 console.log(bar.country);
