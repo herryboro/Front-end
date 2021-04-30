@@ -8,4 +8,5 @@ function outerFunc(arg1, arg2) {
 }
 
 var exam1 = outerFunc(2, 4);
+console.log(exam1);
 exam1(2);
