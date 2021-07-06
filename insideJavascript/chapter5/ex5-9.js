@@ -12,4 +12,5 @@ var userFunc = function (greeting) {
 
 var objHello = new HelloFunc();
 objHello.func = userFunc;
+console.dir(objHello);
 objHello.call();
