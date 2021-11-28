@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery Element Traversing</title>
+		<style>
+			li {
+				display: flex;
+				list-style:none;
+			}
+			li:hover {
+				background-color: blanchedalmond;
+			}
+			li > div {
+				font-size: large;
+			}
+			li.active > div {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<li class="nav_li active">
+			<img src="./img/homeFocus.PNG" alt="">
+			<div class="nav_div">홈</div>
+		</li>
+		<li class="nav_li">
+			<img src="./img/info.PNG" alt="">
+			<div class="nav_div">시정 홍보</div>
+		</li>
+		<li class="nav_li">
+			<img src="./img/data.PNG" alt="">
+			<div class="nav_div">자료</div>
+		</li>
+		<li class="nav_li">
+			<img src="./img/board.PNG" alt="">
+			<div class="nav_div">시정 게시판</div>
+		</li>
+		<script src="./main.js"></script>
+	</body>
+</html>
